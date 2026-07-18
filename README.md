@@ -2,6 +2,7 @@
 
 A responsive, clickable browser prototype for validating the interface and navigation of a future Roblox soccer game. It uses React, TypeScript, Vite, plain CSS, fictional mock data, and no backend.
 
+
 ## Run locally
 
 ```powershell
