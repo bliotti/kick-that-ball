@@ -18,6 +18,18 @@ npm run build
 npm run preview
 ```
 
+
+## Deploy on updates
+
+This repo is ready to deploy through GitHub Pages every time changes are merged to `main`.
+
+1. Push this repository to GitHub.
+2. In GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Merge changes into `main`, or run the **Deploy site** workflow manually from the **Actions** tab.
+
+The deployment workflow installs dependencies with `npm ci`, runs `npm run build`, and publishes `dist/client` as the static site artifact. Pull requests run the same build as a CI check before merge.
+
 ## Prototype scope
 
 Includes all core menus, practice configuration, trick-shot rounds, simulated match and goalkeeper HUDs, skills, shots, team customization, tactics, progression, and settings. Controls update only local mock state and reset on refresh.
