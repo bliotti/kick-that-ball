@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "dev:host": "vite --host",
+    "build": "tsc -b && vite build --outDir dist/client && vite build --ssr worker/index.ts --outDir dist/server --emptyOutDir false",
+    "preview": "vite preview",
+    "deploy:build": "npm run build"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
