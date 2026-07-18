@@ -5,4 +5,5 @@
 
 .joystick{touch-action:none;cursor:grab;user-select:none}.joystick:active{cursor:grabbing;border-color:#ffffff66}.joystick i{pointer-events:none;transition:transform .05s linear}
 .selected-player{transform:translate(-50%,-50%)}.selected-player span{position:absolute;left:50%;bottom:29px;white-space:nowrap;transform:translateX(-50%)}.selected-player i{margin:0;width:38px;height:38px}
+.game-ball{position:absolute;z-index:6;width:42px;height:42px;padding:0;border:0;border-radius:50%;background:transparent;font-size:32px;line-height:1;transform:translate(-50%,-50%);cursor:pointer;filter:drop-shadow(0 7px 5px #0008);transition:filter .12s,scale .12s;touch-action:none}.game-ball:hover,.game-ball:focus-visible{filter:drop-shadow(0 7px 7px #000a) drop-shadow(0 0 8px #ffd43b);scale:1.08}.game-ball:active{scale:.92}
 .match-field:after{bottom:10%;transform:none}
